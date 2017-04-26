@@ -6,8 +6,8 @@ after the interview, so that we can re-use the problem.
 
 ## Problem:
 
-Oh dear. The development team for pingidentity.com all left! Now we're in charge of it. Our marketing
-department wants to know what URLs are reachable by clicking around in pingidentity.com. This will
+Oh dear. The development team for `pingidentity.com` all left! Now we're in charge of it. Our marketing
+department wants to know what URLs are reachable by clicking around in `pingidentity.com`. This will
 help them identify which pages they've created are friendly to a web-crawler. Definitely not because
 it's some technical test for hiring new Sr DevOps engineers. No sir.
 
@@ -41,8 +41,9 @@ To submit your answer, open a merge request, or simply zip up the archive and se
 
 ## FAQ
 
-*Q: Am I required to complete this?*
-*A:* Well, no. We prefer take home exercises because they are representative
+**Q: Am I required to complete this?**
+
+**A:** Well, no. We prefer take home exercises because they are representative
 of the type of work you'll be doing, and we have a need to assess your problem
 solving and engineering expertise. However we also realize that this is an
 investment of your time. If you really prefer not to do a take-home exercise, as an alternative,
@@ -53,8 +54,9 @@ of the work you'll be doing (we do not code on whiteboards at Ping) and whiteboa
 programming in an interview can be very intimidating if you're not prepared. It
 is your call though.
 
-*Q: Why is this called a fuji?*
-*A:* No idea. That's what we call take-home coding assignments at Ping. I think
+**Q: Why is this called a fuji?**
+
+**A:** No idea. That's what we call take-home coding assignments at Ping. I think
 it originated from a Microsoft way of interviewing where they'd ask you how
 you would move Mt Fuji. Apparently those sorts of problems are a terrible way
 to assess whether someone would succeed at Microsoft so they've discontinued it,
