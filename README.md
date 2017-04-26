@@ -65,6 +65,6 @@ but we liked the name so we kept it.
 
 ## Required Tools
 * git
-* java or groovy
-* maven (https://maven.apache.org/install.html)
-* junit or spock
+* groovy
+* gradle
+* junit or spock or your favorite testing framework
