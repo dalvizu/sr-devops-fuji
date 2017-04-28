@@ -1,7 +1,12 @@
 package com.pingidentity.fuji.crawler
 
-import groovyx.net.http.RESTClient
+import java.util.concurrent.TimeUnit
 import java.util.Collection;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 class App {
 
@@ -14,9 +19,18 @@ class App {
    * fit.
    */
   public static void getUniqueApps() {
-    RESTClient client = new RESTClient("https://www.pingidentity.com")
-    def response = client.get( path: "/" )
-    def htmlText = response.data.text
-    System.out.println(htmlText)
+    // This is how you can pull a list of links from a page:
+    DesiredCapabilities  capabilities = new DesiredCapabilities();
+    capabilities.setJavascriptEnabled(true);
+    WebDriver driver = new PhantomJSDriver(capabilities);
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.get("https://www.pingidentity.com");
+    List links = driver.findElements(By.tagName("a"));
+    for (def link : links) {
+        String href = link.getAttribute('href')
+        println href
+    }
+   
+    driver.quit() 
   }
 }
