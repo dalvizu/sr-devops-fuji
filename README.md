@@ -19,6 +19,14 @@ magic. We only care about what the search engines care about: `href` attributes
 on anchor (`a`) tags. Ignore everything else. In addition we only care about
 pages on the `pingidentity.com` domain and no other assets.
 
+`pingidentity.com` uses react to render, so we'll need to use Webdriver to end up with
+usable html. `App.java` contains an example of how you can use this - the exercise
+is more intended to evaluate how to crawl from one page to another, not HTML
+processing.
+
+Note that `pingidentity.com` contains links to zip files and pdfs - don't visit these
+to try to get links, we only care about html.
+
 You have enough to get started with gradle:
 
 ```
