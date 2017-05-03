@@ -54,6 +54,7 @@ To submit your answer, open a merge request, or simply zip up the archive and se
 ## FAQ
 
 **Q: Wait, groovy? I'm more of a Java developer**
+
 **A:** Groovy compiles to Java - it is niceities on top of the JVM. If you don't care to use it,
 just write java code in .groovy files and everything will just work.
 
