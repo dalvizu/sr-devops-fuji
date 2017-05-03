@@ -6,26 +6,27 @@ after the interview, so that we can re-use the problem.
 
 ## Problem:
 
-Oh dear. The development team for `pingidentity.com` all left! Now we're in charge of it. Our marketing
-department wants to know what URLs are reachable by clicking around in `pingidentity.com`. This will
-help them identify which pages they've created are friendly to a web-crawler. Definitely not because
-it's some technical test for hiring new Sr DevOps engineers. No sir.
+Ping Identity has announced the acquisition of `phantomjs.com`, in order to better align Ping Identity's
+vision of a identity-defined security with ... headless JavaScript browser technology. The key is: don't think
+about it too much, Morty.
 
-Your assignment is to write a webcrawler. It should 'crawl' the site and print out
+Turns out nobody knows much about this site. We want to know what paths are reachable from a 
+search engine. We didn't bother keeping any of the web developers on that product, because eww...
+
+Your assignment is to write a webcrawler. It should 'crawl' `phantomjs.com` and print out
 all of the unique paths you can click around in resulting in an html document.
 
 Do not worry about links reachable through 'onclick' handlers or other JavaScript
 magic. We only care about what the search engines care about: `href` attributes
 on anchor (`a`) tags. Ignore everything else. In addition we only care about
-pages on the `pingidentity.com` domain and no other assets.
+pages on the `phantomjs.com` domain and no other assets.
 
-`pingidentity.com` uses react to render, so we'll need to use Webdriver to end up with
-usable html. `App.java` contains an example of how you can use this - the exercise
-is more intended to evaluate how to crawl from one page to another, not HTML
-processing.
+Processing HTML and JavaScript is not really the focus of this assignment, so we've provided
+an example of how to use PhantomJS itself to make these requests, see `App.java`. The focus here is 
+on the design of the crawler.
 
-Note that `pingidentity.com` contains links to zip files and pdfs - don't visit these
-to try to get links, we only care about html.
+This will require you to install PhantomJS. You're applying for a senior position though, so we'll
+expect you'll figure that part out.
 
 You have enough to get started with gradle:
 
@@ -33,9 +34,12 @@ You have enough to get started with gradle:
 gradle test
 ```
 
-This assignment should take about three hours and we typically give you a weekend
-to complete. This is meant to be a place where you can show your problem
-solving and software engineering talent, so place your best foot forward.
+It's sufficient to just write a test which does the crawling.
+
+This assignment should take about three to eight hours and we typically give you a weekend
+to complete it. This is meant to be a place where you can show your problem
+solving and software engineering talent, so place your best foot forward. You will
+be assessed on code and design quality, as well as correctness of your solution.
 
 If you have any questions, feel free to ask through your Ping contact.
 
@@ -75,4 +79,5 @@ but we liked the name so we kept it.
 * git
 * groovy
 * gradle
+* phantomjs
 * junit or spock or your favorite testing framework
