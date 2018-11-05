@@ -6,20 +6,20 @@ after the interview, so that we can re-use the problem.
 
 ## Problem:
 
-Ping Identity has announced the acquisition of `phantomjs.com`, in order to better align Ping Identity's
+Ping Identity has announced the acquisition of `phantomjs.org`, in order to better align Ping Identity's
 vision of a identity-defined security with ... headless JavaScript browser technology. The key is: don't think
 about it too much, Morty.
 
 Turns out nobody knows much about this site. We want to know what paths are reachable from a 
 search engine. We didn't bother keeping any of the web developers on that product, because eww...
 
-Your assignment is to write a webcrawler. It should 'crawl' `phantomjs.com` and print out
+Your assignment is to write a webcrawler. It should 'crawl' `phantomjs.org` and print out
 all of the unique paths you can click around in resulting in an html document.
 
 Do not worry about links reachable through 'onclick' handlers or other JavaScript
 magic. We only care about what the search engines care about: `href` attributes
 on anchor (`a`) tags. Ignore everything else. In addition we only care about
-pages on the `phantomjs.com` domain and no other assets.
+pages on the `phantomjs.org` domain and no other assets.
 
 Processing HTML and JavaScript is not really the focus of this assignment, so we've provided
 an example of how to use PhantomJS itself to make these requests, see `App.java`. The focus here is 
