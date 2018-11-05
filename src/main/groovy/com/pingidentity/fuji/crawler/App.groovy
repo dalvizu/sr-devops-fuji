@@ -24,7 +24,7 @@ class App {
     capabilities.setJavascriptEnabled(true);
     WebDriver driver = new PhantomJSDriver(capabilities);
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-    driver.get("https://www.pingidentity.com");
+    driver.get("http://phantomjs.org/");
     List links = driver.findElements(By.tagName("a"));
     for (def link : links) {
         String href = link.getAttribute('href')
